@@ -1,0 +1,263 @@
+body {
+	overflow-x: hidden;
+}
+header{
+background-image: url(assets/ju-on-148561.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 37vh;
+width: 100%;
+position: absolute;
+top:0;
+left:0;
+}
+header:after {
+	content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+}
+h1 {
+	margin-top: 5%;
+	position: relative;
+	top: 3vh;
+	display: block;
+	width: 25%;
+	color: #fff;
+	font-family:  'Poiret One', cursive;
+	opacity: 0.85;
+	margin: 0px auto 0 auto;
+	font-size: 10vh;
+	text-align: center;
+	padding: 1%;
+	border: 2px solid #fff;
+
+}
+h6 {
+	display: block;
+	width:100%;
+	font-size: 1.7rem;
+}
+.projects:before {
+	content: "";
+	width: 100%;
+	display: block;
+}
+.projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 42vh;
+}
+.projects div {
+text-decoration: none;
+color: #080808;		
+  position: relative;
+  width: 250px; 
+  height: 144.17px;
+  background-color: transparent;
+  margin: 125px 10vw;
+  border-left: solid 1px #cc6521;
+  border-right: solid 1px #cc6521;
+  display: flex;
+  position: relative;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+}
+.projects div {
+	text-align: center;
+}
+
+.projects div:before,
+.projects div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 176.78px;
+  height: 176.78px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 35.6117px;
+}
+
+.projects div:before {
+  top: -88.3883px;
+  border-top: solid 1.4142px #cc6521;
+  border-right: solid 1.4142px #cc6521;
+}
+
+.projects div:after {
+  bottom: -88.3883px;
+  border-bottom: solid 1.4142px #cc6521;
+  border-left: solid 1.4142px #cc6521;
+}
+.projects div:hover{
+	opacity: 1;
+	border-left: 2px solid #cc6521;
+	border-right: 2px solid #cc6521;
+}
+.projects div:hover .displayProject, .projects div:hover .displayGithub {
+	transition: all 0.4s;
+	opacity: 1;
+	transform: translateX(0);
+}
+.projects div:hover .tech {
+	transform: translateX(150px);
+	opacity: 0;
+	transition: all 0.4s;
+}
+.projects div:hover:before {
+	border-top: 2px solid #cc6521;
+	border-right: 2px solid #cc6531;
+
+}
+.projects div:hover:after {
+ 
+  border-bottom: 2px solid #cc6521;
+  border-left: 2px solid #cc6521;
+}
+
+footer {
+background-image: url(assets/ju-on-148561.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height: 18vh;
+width: 100%;
+display: block;
+float:left;
+}
+
+footer div:before {
+	content: "";
+	display:block;
+	width: 100%;
+	clear: both;
+}
+footer div {
+font-family: 'Poiret One', cursive;
+font-size: 1rem;
+color: #fff;
+margin: auto;
+width: 30%;
+margin-top: 6vh;
+}
+.displayProject, .displayGithub {
+	opacity: 0;
+	display: inline-block;
+	font-size: 1rem;
+	font-family: Helvetica;
+	padding: 5px;
+	transition: all 0.2s;
+	transform: translateX(-100px);
+	color: #ccbb21;
+	position: absolute;
+	top:44%;
+	left:17%;
+
+}
+.displayGithub {
+	left: 59%;
+}
+.displayProject:hover, .displayGithub:hover {
+	color: #cc6521;
+}
+.tech{
+	font-family: 'Poiret One';
+	font-size: 1.2rem;
+	display: block;
+	position: absolute;
+	top: 46%;
+	left: 39%;
+	transform: translateX(0);
+	transition: all 0.4s;
+	color: #080808;
+}
+.techJava {
+	left: 34%;
+}
+.techBlog {
+	left: 0%;
+}
+.techWeather {
+	top: 73%;
+	left: 29%;
+}
+.icon {
+	float:left;
+	display: inline;
+	position: absolute;
+	left: 47%;
+}
+@media (max-width: 880px){
+	.icon{
+		display:none;
+	}
+}
+.first{
+	width: 8%;
+	background-color: transparent;
+	height: 25px;
+	float: left;
+	transition: all 0.5s;
+	text-decoration: none;
+	color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2rem;
+}
+.sec {
+	text-decoration: none;
+	width: 8%;
+	height: 25px;
+	background-color: transparent;
+	float: left;
+	transition: all 0.5s;
+    color: #fff;
+    margin-left: 5px;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+font-family: 'Poiret One', cursive;
+}
+ul li {
+	list-style: none;
+	display: inline;
+}
+li a:hover {
+	transition: all 0.2s;
+	border: 2px solid #fff;	
+	border-style: none none dotted none;
+}
+nav {
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+nav ul {
+	height: 25px;
+	width: 100%;
+}
+nav:after {
+	content: "";
+	display: block;
+	width: 100%;
+	clear: both;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+	padding: 9px;
+	margin-left: 5px;
+	font-size: 1.2rem;
+	width: 8%;
+	height: 25px;
+	float:left;
+	text-align:center;
+}

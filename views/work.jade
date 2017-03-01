@@ -1,0 +1,47 @@
+doctype html 
+html
+	head
+		title| work
+		link(href="/css/reset.css", rel="stylesheet")/
+		link(href="/css/_normalize.css", rel="stylesheet")/
+		link(href="/css/work.css", rel="stylesheet")/
+		link(href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet")/
+	body
+		header
+			nav
+				ul
+					li: a(href="/home") Home
+					li: a(href="/contact") Contact
+				h1 Work
+		section.projects
+			div
+				h6 Calculator
+				span.tech jQuery
+				a(href="https://github.com/tuscior/calculator").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project
+			div
+				h6 Tetris
+				span.tech Javascript
+				a(href="https://github.com/tuscior/tetris").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project	
+			div
+				h6 Snake
+				span.tech Javascript
+				a(href="https://github.com/tuscior/snake").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project	
+			div
+				h6 Pomodoro
+				span.tech jQuery
+				a(href="https://github.com/tuscior/pomodoro").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project
+			div
+				h6 Blog Application
+				span.tech.techBlog React Redux MongoDB Express Nodejs
+				a(href="https://github.com/tuscior/BlogHeroku").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project
+			div
+				h6 Weather Application
+				span.tech jQuery AJAX
+				a(href="https://github.com/tuscior/Weather-App").displayProject Github
+				a(href="http://codepen.io/").displayGithub View Project			
+		include includes/footer.jade	

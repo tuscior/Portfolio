@@ -1,0 +1,20 @@
+doctype html 
+html
+	head
+		title| home
+		link(href="/css/reset.css", rel="stylesheet")/
+		link(href="/css/_normalize.css", rel="stylesheet")/
+		link(href="/css/index.css", rel="stylesheet")/
+		link(href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet")/
+	body
+		nav
+			ul
+				li: a(href="/work").first| Work
+				li: a(href="/contact").sec| Contact
+		div.logo
+			img(src="css/assets/logotrue1.png")
+	script.
+		let logo = document.querySelector('.logo')
+		let links = document.querySelectorAll('a')
+		links.forEach((link) => {link.style.visibility = "visible"})
+		logo.style.display = "block"				

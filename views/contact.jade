@@ -1,0 +1,22 @@
+doctype html 
+html
+	head
+		title contact
+		link(href="/css/reset.css", rel="stylesheet")/
+		link(href="/css/_normalize.css", rel="stylesheet")/
+		link(href="/css/work.css", rel="stylesheet")/
+		link(href="/css/contact.css", rel="stylesheet")/
+		link(href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet")/
+	body
+		header
+			nav
+				ul
+					li: a(href="/home") Home
+					li: a(href="/work") Work
+				h1 Contact
+		div.form
+			form(action="/contact", method="post")
+				input(type="text", placeholder="Your Email", name="email")
+				textarea(placeholder="Message" name="message")
+				button(type="submit") Wyslij
+		include includes/footer.jade	
