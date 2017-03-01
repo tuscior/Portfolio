@@ -99,7 +99,7 @@ color: #080808;
 	border-left: 2px solid #cc6521;
 	border-right: 2px solid #cc6521;
 }
-.projects div:hover .displayProject, .projects div:hover .displayGithub {
+.projects div:hover .displayProject, .projects div:hover .displayGithub,.projects div:hover .displayBlog {
 	transition: all 0.4s;
 	opacity: 1;
 	transform: translateX(0);
@@ -144,6 +144,16 @@ margin: auto;
 width: 30%;
 margin-top: 6vh;
 }
+@media(max-width: 1050px){
+ footer div {
+ 	width: 50%;
+ }
+}
+@media(max-width: 750px){
+	footer div{
+		width: 70%;
+	}
+}
 .displayProject, .displayGithub {
 	opacity: 0;
 	display: inline-block;
@@ -155,14 +165,29 @@ margin-top: 6vh;
 	color: #ccbb21;
 	position: absolute;
 	top:44%;
-	left:17%;
+	left:6%;
 
 }
 .displayGithub {
-	left: 59%;
+	left: 50%;
 }
-.displayProject:hover, .displayGithub:hover {
+.displayProject:hover, .displayGithub:hover, .displayBlog:hover {
 	color: #cc6521;
+}
+.displayBlog{
+	opacity: 0;
+	display: inline-block;
+	font-size: 1rem;
+	font-family: Helvetica;
+	padding: 5px;
+	transition: all 0.2s;
+	transform: translateX(-100px);
+	color: #ccbb21;
+	position: absolute;
+	left: 34%;
+	top: 44%;
+	width: 70px;
+	height: 45px;
 }
 .tech{
 	font-family: 'Poiret One';
@@ -176,14 +201,13 @@ margin-top: 6vh;
 	color: #080808;
 }
 .techJava {
-	left: 34%;
+	left: 35%;
 }
 .techBlog {
 	left: 0%;
 }
 .techWeather {
-	top: 73%;
-	left: 29%;
+	left: 24%;
 }
 .icon {
 	float:left;
@@ -196,33 +220,7 @@ margin-top: 6vh;
 		display:none;
 	}
 }
-.first{
-	width: 8%;
-	background-color: transparent;
-	height: 25px;
-	float: left;
-	transition: all 0.5s;
-	text-decoration: none;
-	color: #fff;
-    padding: 12px;
-    text-align: center;
-    font-family: 'Poiret One', cursive;
-    font-size: 1.2rem;
-}
-.sec {
-	text-decoration: none;
-	width: 8%;
-	height: 25px;
-	background-color: transparent;
-	float: left;
-	transition: all 0.5s;
-    color: #fff;
-    margin-left: 5px;
-    padding: 12px;
-    text-align: center;
-    font-size: 1.2rem;
-font-family: 'Poiret One', cursive;
-}
+
 ul li {
 	list-style: none;
 	display: inline;
@@ -256,8 +254,15 @@ a {
 	padding: 9px;
 	margin-left: 5px;
 	font-size: 1.2rem;
-	width: 8%;
+	width: 90px;
 	height: 25px;
 	float:left;
 	text-align:center;
+}
+@media(max-width: 800px){
+a{
+	padding: 7px;
+	width: 75px;
+	font-size: 1.5rem;
+}
 }

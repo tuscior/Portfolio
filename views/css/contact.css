@@ -2,6 +2,16 @@ header {
 	position: initial;
 	float: left;
 }
+@media(max-width: 750px){
+  header h1 {
+    width: 35%;
+  }
+}
+@media(max-width: 525px){
+  header h1 {
+    width: 40%;
+  }
+}
 div:before {
 content: "";
 display: block;
@@ -15,6 +25,11 @@ form{
 	width: 45%;
 	margin: auto;
   font-family: Helvetica sans-serif;
+}
+@media(max-width: 820px){
+  form{
+    width: 70%;
+  }
 }
 input:first-of-type {
 	width: 100%;
@@ -56,6 +71,11 @@ button {
   align-items: center;
   width: 25%;
   background-color: #fff;
+}
+@media(max-width: 820px){
+  button{
+    width: 42%;
+  }
 }
   button:hover {
     transition: all 60ms ease;

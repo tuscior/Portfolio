@@ -54,7 +54,7 @@ nav ul {
 }
 .first, .sec {
 	text-decoration: none;
-	width: 8%;
+	width: 90px;
 	height: 25px;
 	background-color: transparent;
 	visibility: hidden;
@@ -65,6 +65,12 @@ nav ul {
     text-align: center;
     font-size: 1.2rem;
 	font-family: 'Poiret One', cursive;
+}
+@media(max-width: 800px){
+.first, .sec {
+	padding: 5px;
+	width: 75px;
+}
 }
 ul li {
 	list-style: none;
